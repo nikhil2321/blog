@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <center><
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <marquee style="background-color: yellow;">You are seeing one of the best hotel websites in our country. Hotel bookings are increased by 18% GST</marquee>
+            <h1>Welcome to our Hotel</h1>
+            <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vikram.css')}}">
+            <p>Book your stay with us today!</p>
+            <img src="https://imgs.search.brave.com/djJSxW1Tr_aiR2qCMK5bD4pEjBIbldG8Gv4xEx_k_RY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9waWN0dXJlLWd1/ZXN0cy1nZXR0aW5n/LWtleS1jYXJkLWhv/dGVsXzEwOTI4NS03/MzguanBnP3NpemU9/NjI2JmV4dD1qcGc" alt="hotel" height="500px" width="800px"/>
+        </section>
+        <section id="rooms">
+            <h1>Our Rooms</h1>
+            <img src="https://media.gettyimages.com/id/903417402/photo/luxury-construction-hotel-with-swimming-pool-at-sunset.jpg?s=612x612&w=0&k=20&c=NyPC_c-wE3W_CImA4t57FpyGy6f428CYROd80jxVC4A=" alt="hotel" height="400px" width="600px"/>
+            <img src="https://media.gettyimages.com/id/1334117334/photo/digital-render-of-large-hotel-suite-bedroom.jpg?s=612x612&w=0&k=20&c=kzkNh4AGdRiLnbsJLHDczl1OROhXvhQD3f4N3j6Ptsw=" alt="hotel" height="400px" width="600px"/>
+            <img src="https://imgs.search.brave.com/71MJd9xjgpuBng-jy9A4FWtj5p2hkVLiDAiF-MdC3Rg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/MDUwOTc2NS9waG90/by9lbmpveWluZy1h/LWxlaXN1cmUtaG9s/aWRheS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9UVQ5dmxT/SXk3RWJnVDViMm5Z/WGhkWkxwVWU2aDZB/M1BZdUl3YTFJNTRG/az0" alt="hotel" height="400px" width="600px"/>
+            <img src="https://imgs.search.brave.com/mhJ1gOba5ECRSDDwKV_buGBRDXybQs05haVLiEd0uTE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/b2Jlcm9paG90ZWxz/LmNvbS8tL21lZGlh/L29iZXJvaS1ob3Rl/bHMvd2Vic2l0ZS1p/bWFnZXMvdGhlLW9i/ZXJvaS1tdW1iYWkv/cm9vbS1hbmQtc3Vp/dGVzL2x1eHVyeS1y/b29tL2RldGFpbC8x/OTY1bHV4dXJ5LXJv/b20tYmVkcm9vbS10/aGUtb2Jlcm9pLW11/bWJhaS0tMi5qcGc" alt="hotel" height="400px" width="600px"/>
+            <div class="room">
+                <h2>Deluxe Room</h2>
+                <img  src="https://imgs.search.brave.com/jR1ih6nqqSwhAMjSz4bVPnKssUseqiCSOhqmOhFzf8A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jbnRyYXZlbGVy/LmNvbS9waG90b3Mv/NWRhODdjNzY0YjFl/NDAwMDA4MjAzNzRh/LzE2Ojkvd18yNTYw/LGNfbGltaXQvSG90/ZWwtZGVMdXhlXzIw/MTlfXzEzMzAzMTYu/anBn" alt="Deluxe Room Image"/>
+                <img src="https://imgs.search.brave.com/9xz8YAs7hwi4oSrKI08RW8tYH_h3FGlZl47VSj4Ferc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMz/MzI1NzkzMi9waG90/by9kaWdpdGFsbHkt/Z2VuZXJhdGVkLWlt/YWdlLW9mLXRoZS1s/dXh1cmlvdXMtaG90/ZWwtbG9iYnkuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUtR/YjZ4dnJ1TVRJZU1z/c0xNem9vb3ZLZXVL/c1pHM1BvR3pkMUx5/RG1PODQ9" alt="Deluxe Room Image"/>
+                <br>
+            </div>
+        </section>
+        <section id="booking">
+            <h1>Booking</h1>
+            <form id="booking-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <button>Book Now</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Landline : +41 2387932348</p>
+            <p><Address>2-3/3, Near Indian Bank, Cobra street, Mumbai, Maharastra. 530021</Address></p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 Hotel</p>
+    </footer>
+    </center>
+</body>
+</html>

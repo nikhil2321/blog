@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Blog Posts</h1>
+        {% for i in posts %}
+        <div class="post">
+            <h2>{{i[1]}}</h2>
+            <p>{{i[2]}}</p>
+            <small>posted at: {{i[3]}}</small>
+            <form method="POST" action="{{url_for('delete_posts',id=posts[0])}}" onsubmit="return confirm('Are you sure you want to delete the post?');">
+            <button>Delete</button>
+            </form>
+            <form method="GET" action="{{url_for('update_post',id=posts[0])}}">
+                <button>Edit</button>
+                </form>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
